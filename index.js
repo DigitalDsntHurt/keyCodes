@@ -1,6 +1,6 @@
-const codeContainer = document.getElementById('code-container');
+
+let codeContainer = document.querySelector('#code-container');
 
 window.addEventListener('keydown', e => {
-  console.log(e.keyCode)
-  codeContainer.appendChild(e.keyCode)
+  codeContainer.textContent = e.keyCode;
 })
